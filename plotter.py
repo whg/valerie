@@ -29,7 +29,7 @@ def digital2real(p):
 
     mult = 10
     x = p[1] * mult
-    y = 10320 - (p[2] * mult)
+    y = 10320 - p[2] * mult
     return x, y
 
 

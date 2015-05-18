@@ -49,7 +49,7 @@ def download(fileid):
     res.headers['Content-Type'] = 'application/json'
 
     return res
-    
+
     
 @app.route('/plot/', methods=['POST', 'GET'])
 def plot():
@@ -94,7 +94,7 @@ if __name__ == '__main__':
     except OSError:
         print("No plotter found, going without.")
 
-    app.run()
+    app.run(debug=True)
 
     if plotter:
         plotter.close()

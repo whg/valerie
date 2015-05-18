@@ -58,6 +58,7 @@ function UI() {
             var div = getItem(currentExpandedShape).find("div.shape");
             highlightDiv(div, false);
         }
+
         var div = getItem(shapeId).find("div.shape");
         highlightDiv(div, true);
         // li.css("background", "#faa");

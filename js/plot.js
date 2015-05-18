@@ -29,10 +29,10 @@ function Plot() {
     
     this.plotShapeIds = function(shapeIds) {
         console.log("plotting");
-
-        filterDuplicateLines(shapeIds);        
+        
+        // filterDuplicateLines(shapeIds);        
         var data = sortIntoPens(shapeIds);
-
+        console.log(data);
         plotData(data);
     };
     

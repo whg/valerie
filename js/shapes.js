@@ -47,6 +47,7 @@ function Shapes() {
 
     var shapes = {};
     this.layer = new Group();
+    this.shapes = shapes;
 
     var ids = 1;
     this.nextId = function() {
@@ -57,6 +58,11 @@ function Shapes() {
     this.get = function(key) {
         return shapes[key];
     };
+
+    this.addShape = function(shape) {
+        shapes[shape.id] = shape;
+        ui.addShape(shape);
+    }
 
     this.add = function(key) {
         var shape = new TShape(key, ids);
